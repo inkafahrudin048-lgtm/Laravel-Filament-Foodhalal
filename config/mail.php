@@ -52,17 +52,17 @@ return [
             'transport' => 'ses',
         ],
 
-        'resend' => [
-            'transport' => 'resend',
-            'api_key' => env('RESEND_API_KEY'),
-        ],
-
         'postmark' => [
             'transport' => 'postmark',
             // 'message_stream_id' => env('POSTMARK_MESSAGE_STREAM_ID'),
             // 'client' => [
             //     'timeout' => 5,
             // ],
+        ],
+
+        'resend' => [
+            'transport' => 'resend',
+            'api_key' => env('RESEND_API_KEY'),
         ],
 
         'sendmail' => [
